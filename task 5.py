@@ -42,3 +42,13 @@ bbbacacac, на это уйдёт 9 ходов, ниже указаны стро
 @author: workk
 """
 
+def task_5 (s, letter):
+  count_letters = 0
+  sum_index = 0
+  res = 0
+  for i in range(s):
+    if s[i] == letter:
+      res = res + i - count_letters
+      count_letters += 1
+  return res
+  
